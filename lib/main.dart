@@ -2,36 +2,16 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 import 'package:flutter/material.dart';
+import 'package:flutter_1/Models/location.dart';
+import 'package:flutter_1/location_detail.dart';
+import 'package:flutter_1/mocks/mock_location.dart';
 
 void main() {
-  return runApp(MaterialApp(
-    home: Scaffold(
-      appBar: AppBar(
-        title: Text("Hello World!"),
-      ),
-      body: Column(
-       children: [
-      Container(
-        decoration: BoxDecoration(
-          color: Colors.red,
-        ),
-        child: Text("One"),
-      ),
+  final Location mockLocation = MockLocation.FetchAny();
 
-          Container(
-           decoration: BoxDecoration(
-             color: Colors.blue,
-           ),
-           child: Text("Two"),
-         ), Container(
-           decoration: BoxDecoration(
-             color: Colors.green,
-           ),
-           child: Text("Three"),
-         ),
-       ],
-      )),
-  ));
+  return runApp(MaterialApp(
+    home: LocationDetail(mockLocation),
+  ),);
 
 
 }
