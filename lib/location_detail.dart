@@ -8,7 +8,14 @@ class LocationDetail extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text(location.name)),
+      appBar: AppBar(
+          title: Text(
+              location.name,
+            style: TextStyle(
+              color: Colors.grey[300],
+            ),
+          ),
+      ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -31,11 +38,12 @@ class LocationDetail extends StatelessWidget {
 
   Widget _sectionTitle(String text) {
     return Container(
-      padding: EdgeInsets.fromLTRB(10.0, 10.0, 25.0, 10.0),
+      padding: EdgeInsets.fromLTRB(20.0, 15.0, 25.0, 15.0),
       child: Text(
         text,
         textAlign: TextAlign.left,
         style: TextStyle(
+          fontFamily: 'Raleway',
           fontSize: 25.0,
           color: Colors.black,
         ),
@@ -45,8 +53,14 @@ class LocationDetail extends StatelessWidget {
 
   Widget _sectionText(String text) {
     return Container(
-      padding: EdgeInsets.only(left: 25.0, right:  15.0),
-        child: Text(text));
+        padding: EdgeInsets.fromLTRB(25.0, 15.0, 25.0, 15.0),
+        child: Text(
+          text,
+          style: TextStyle(
+            color: Colors.grey[700],
+            fontFamily: 'fonts/Raleway',
+          ),
+        ));
   }
 
   Widget _bannerImage(String url, double height) {
