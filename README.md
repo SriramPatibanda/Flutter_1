@@ -1,11 +1,11 @@
-<<<<<<< HEAD
-# flutter_1
+
+# flutter 101
 
 Introductory project 
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+This project is a beginning point for a Flutter app
 
 A few resources to get you started if this is your first Flutter project:
 
@@ -18,4 +18,3 @@ samples, guidance on mobile development, and a full API reference.
 =======
 # Flutter_1
 Getting started with flutter
->>>>>>> c17ced845e0d9bdfe530fbe995545ec8709d0d8c
